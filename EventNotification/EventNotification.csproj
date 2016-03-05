@@ -51,13 +51,13 @@
     <Compile Include="SimpleEventNotifier.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CB.Model\CB.Model.Common\CB.Model.Common.csproj">
+      <Project>{33a5df99-1312-4023-a6ef-eabb9848f5a6}</Project>
+      <Name>CB.Model.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EventNotifierWindow\EventNotifierWindow.csproj">
       <Project>{d9abe5b6-f192-45d0-a603-82a56fe96c55}</Project>
       <Name>EventNotifierWindow</Name>
-    </ProjectReference>
-    <ProjectReference Include="D:\Library\Dot Net\CB.Model\CB.Model.Common\CB.Model.Common.csproj">
-      <Project>{33A5DF99-1312-4023-A6EF-EABB9848F5A6}</Project>
-      <Name>CB.Model.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
