@@ -127,17 +127,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CB.Model\CB.Model.Common\CB.Model.Common.csproj">
-      <Project>{33a5df99-1312-4023-a6ef-eabb9848f5a6}</Project>
-      <Name>CB.Model.Common</Name>
+    <ProjectReference Include="..\EventNotifierModels\EventNotifierModels.csproj">
+      <Project>{e17a5cd1-3591-4859-b14a-a4b0d78b1d6e}</Project>
+      <Name>EventNotifierModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EventNotification\EventNotification.csproj">
-      <Project>{327700e7-df47-400e-b51f-9ec5cda2d461}</Project>
-      <Name>EventNotification</Name>
+    <ProjectReference Include="..\EventNotifierViewModels\EventNotifierViewModels.csproj">
+      <Project>{9317e265-78db-455b-a3d1-f4f0dfec652b}</Project>
+      <Name>EventNotifierViewModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\EventNotifierWindow\EventNotifierWindow.csproj">
       <Project>{d9abe5b6-f192-45d0-a603-82a56fe96c55}</Project>
       <Name>EventNotifierWindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Library\Dot Net\CB.Model\CB.Model.Common\CB.Model.Common.csproj">
+      <Project>{33a5df99-1312-4023-a6ef-eabb9848f5a6}</Project>
+      <Name>CB.Model.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

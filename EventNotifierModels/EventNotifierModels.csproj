@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{327700E7-DF47-400E-B51F-9EC5CDA2D461}</ProjectGuid>
+    <ProjectGuid>{E17A5CD1-3591-4859-B14A-A4B0D78B1D6E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventNotification</RootNamespace>
-    <AssemblyName>EventNotification</AssemblyName>
+    <RootNamespace>EventNotifierModels</RootNamespace>
+    <AssemblyName>EventNotifierModels</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,34 +30,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Event.cs" />
     <Compile Include="EventNotificationEventArgs.cs" />
-    <Compile Include="EventNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleEventNotifier.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CB.Model\CB.Model.Common\CB.Model.Common.csproj">
-      <Project>{33a5df99-1312-4023-a6ef-eabb9848f5a6}</Project>
+    <ProjectReference Include="D:\Library\Dot Net\CB.Model\CB.Model.Common\CB.Model.Common.csproj">
+      <Project>{33A5DF99-1312-4023-A6EF-EABB9848F5A6}</Project>
       <Name>CB.Model.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EventNotifierWindow\EventNotifierWindow.csproj">
-      <Project>{d9abe5b6-f192-45d0-a603-82a56fe96c55}</Project>
-      <Name>EventNotifierWindow</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

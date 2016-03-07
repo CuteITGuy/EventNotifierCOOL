@@ -2,7 +2,7 @@
 using CB.Model.Common;
 
 
-namespace EventNotification
+namespace EventNotifierModels
 {
     public class Event: ObservableObject
     {

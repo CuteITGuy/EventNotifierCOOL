@@ -3,12 +3,13 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading;
 using System.Timers;
+using EventNotifierModels;
 using Timer = System.Timers.Timer;
 
 
-namespace EventNotification
+namespace EventNotifierViewModels
 {
-    public class EventNotifier
+    public class MainWindowModelViewBase
     {
         #region Fields
         private const double INTERVAL = 60.0 * 1000;
@@ -18,9 +19,9 @@ namespace EventNotification
 
 
         #region  Constructors & Destructor
-        public EventNotifier(): this(TimeSpan.FromMilliseconds(INTERVAL)) { }
+        public MainWindowModelViewBase(): this(TimeSpan.FromMilliseconds(INTERVAL)) { }
 
-        public EventNotifier(TimeSpan interval)
+        public MainWindowModelViewBase(TimeSpan interval)
         {
             _synchronizationContext = SynchronizationContext.Current;
             _timer = new Timer(interval.TotalMilliseconds);

@@ -1,4 +1,4 @@
-﻿namespace EventNotification
+﻿namespace EventNotifierModels
 {
     public class EventNotificationEventArgs
     {

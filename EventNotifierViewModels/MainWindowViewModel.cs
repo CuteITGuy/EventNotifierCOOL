@@ -1,15 +1,16 @@
 ﻿using System;
+using EventNotifierModels;
 using EventNotifierWindow;
 
 
-namespace EventNotification
+namespace EventNotifierViewModels
 {
-    public class SimpleEventNotifier: EventNotifier
+    public class MainWindowViewModel: MainWindowModelViewBase
     {
         #region  Constructors & Destructor
-        public SimpleEventNotifier() { }
+        public MainWindowViewModel() { }
 
-        public SimpleEventNotifier(TimeSpan interval): base(interval) { }
+        public MainWindowViewModel(TimeSpan interval): base(interval) { }
         #endregion
 
 
