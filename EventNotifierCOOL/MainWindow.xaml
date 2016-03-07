@@ -11,22 +11,29 @@
 
     <Window.Resources>
         <mdl:SimpleEventNotifier x:Key="EventNotifier" />
+        
         <sys:Double x:Key="MinWidth">240</sys:Double>
+        
         <Thickness x:Key="NormalMargin">8</Thickness>
+        
         <Style x:Key="CommonStyle" TargetType="FrameworkElement">
             <Setter Property="Margin" Value="{StaticResource NormalMargin}" />
             <Setter Property="MinWidth" Value="{StaticResource MinWidth}" />
             <Setter Property="VerticalAlignment" Value="Center" />
         </Style>
+        
         <DataTemplate x:Key="DescriptionColumnTemplate">
             <TextBlock Style="{StaticResource CommonStyle}" Text="{Binding Path=(mdl:Event.Description)}" />
         </DataTemplate>
+        
         <DataTemplate x:Key="DescriptionEditColumnTemplate">
             <TextBox Style="{StaticResource CommonStyle}" Text="{Binding Path=(mdl:Event.Description)}" />
         </DataTemplate>
+        
         <DataTemplate x:Key="TimeColumnTemplate">
             <TextBlock Style="{StaticResource CommonStyle}" Text="{Binding Path=(mdl:Event.Time)}" />
         </DataTemplate>
+        
         <DataTemplate x:Key="TimeEditColumnTemplate">
             <xctk:DateTimeUpDown Style="{StaticResource CommonStyle}" Value="{Binding Path=(mdl:Event.Time)}" />
         </DataTemplate>
