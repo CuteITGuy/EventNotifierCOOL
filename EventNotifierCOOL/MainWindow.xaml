@@ -49,11 +49,7 @@
         </Style>
     </Window.Resources>
 
-    <Window.DataContext>
-        <StaticResource ResourceKey="WdwViewModel" />
-    </Window.DataContext>
-
-    <Grid>
+    <Grid DataContext="{StaticResource WdwViewModel}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
